@@ -62,10 +62,10 @@ app.post('/callback', (req, res) => {
   })
 })
 
-app.post(('/signature', (req,res) =>{
+app.post('/signature', (req,res) =>{
   console.log("Signature returned from user")
   console.log(req.body)
-}))
+})
 
 // run the app server and tunneling service
 const server = app.listen(8088, () => {
